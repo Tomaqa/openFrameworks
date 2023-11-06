@@ -66,6 +66,7 @@ function installPackages {
 # 	VERSION_ID, HOME_URL, SUPPORT_URL, BUG_REPORT_URL, VERSION_CODENAME, UBUNTU_CODENAME
 source /etc/os-release
 
+apt-get install -y lsb_release
 if [ "$ID" = "elementary" ]; then
 	# Gets ubuntu base version
 	RELEASE=$(lsb_release -r -u)
